@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.17.3",
+    "@radix-ui/react-dialog": "^1.0.3",
+    "@radix-ui/react-label": "^2.0.1",
     "@radix-ui/react-scroll-area": "^1.0.3",
+    "@supabase/supabase-js": "^2.21.0",
     "@types/node": "20.1.1",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",

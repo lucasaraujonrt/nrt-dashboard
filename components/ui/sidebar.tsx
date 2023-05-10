@@ -33,7 +33,7 @@ export function Sidebar() {
   const route = useRouter();
 
   return (
-    <div className={cn("pb-12 ", ["min-h-screen lg:w-96 mt-4"])}>
+    <div className={cn("pb-12 ", ["min-h-screen lg:w-96 mt-4 border-r"])}>
       <div className="space-y-4 py-4">
         {DEFAULT_ITEMS.map((item) => (
           <div className="px-4 py-2" key={item.id}>
@@ -44,7 +44,7 @@ export function Sidebar() {
               {item.items.map((sub) => (
                 <Button
                   key={sub.href}
-                  variant="secondary"
+                  variant="ghost"
                   size="sm"
                   className="w-full justify-start"
                   onClick={() => route.push(sub.href)}

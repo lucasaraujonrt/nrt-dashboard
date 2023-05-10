@@ -22,9 +22,9 @@ export default function RootLayout({
       </div>
       <div className="border-t">
         <div className="bg-background">
-          <div className="flex justify-evenly bg-background">
+          <div className="flex bg-background">
             <Sidebar />
-            <div className="container">{children}</div>
+            <div className="flex w-full mt-10 ml-10">{children}</div>
           </div>
         </div>
       </div>

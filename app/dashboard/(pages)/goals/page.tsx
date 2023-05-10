@@ -1,6 +1,6 @@
 export default function Goals() {
   return (
-    <div className="flex bg-red-400">
+    <div className="">
       <h1>Goals</h1>
     </div>
   );

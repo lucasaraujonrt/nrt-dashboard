@@ -25,6 +25,11 @@ const DEFAULT_ITEMS = [
         href: "/dashboard/financial",
         icon: <Banknote className="mr-2 h-4 w-4" />,
       },
+      {
+        label: "Cost of living",
+        href: "/dashboard/financial",
+        icon: <Banknote className="mr-2 h-4 w-4" />,
+      },
     ],
   },
 ];

@@ -13,7 +13,7 @@ export default function RootLayout({
     <>
       <div className="w-full flex justify-between items-end p-4">
         <h4 className="scroll-m-20 text-xl font-semibold tracking-tight">
-          {user?.fullName}
+          {user?.firstName}
         </h4>
         <h3 className="scroll-m-20 text-xl font-semibold tracking-tight">
           Our Dashboard

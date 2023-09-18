@@ -26,25 +26,10 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { useFinancialUseCase } from "@/app/dashboard/(pages)/financial/useCase";
 
 export default function Financial() {
-  const { userId, getToken } = useAuth();
-  const [data, setData] = useState(null);
-  const fetchData = async () => {
-    const token = await getToken({ template: "supabase" });
-    const data = await getFinancial({ userId, token });
-    setData(data);
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, [getToken, userId]);
-
-  const addFinancial = async () => {
-    const token = await getToken({ template: "supabase" });
-    await setFinancial({ userId, token });
-    fetchData();
-  };
+  const { data, addFinancial } = useFinancialUseCase();
 
   return (
     <div className="w-full flex flex-col pr-8">
